@@ -3,12 +3,13 @@ import shutil
 
 
 def format_time(seconds):
-
+    """ Format the time in minutes and seconds """
     m, s = divmod(seconds, 60)
     return f"{int(m):02d}:{int(s):02d}"
 
 
 def ft_tqdm(lst: range) -> None:
+    """ Display a progress bar for a given iterable """
 
     total = len(lst)
     start_time = time.time()

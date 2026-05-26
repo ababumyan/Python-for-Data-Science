@@ -2,12 +2,12 @@ import sys
 
 
 def error_message(message: str):
-
+    """ Print an error message """
     print(f"AssertionError: {message}")
 
 
 def punctuation_marks(char: str) -> bool:
-
+    """ Check if a character is a punctuation mark """
     return char in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
 
@@ -18,6 +18,8 @@ class Building:
         self.string_counter()
 
     def string_counter(self):
+        """ Count the number of uppercase letters, lowercase letters,
+        punctuationmarks, spaces, digits and the length of the string """
         upercase_letters = 0
         lowercase_letters = 0
         punctuation = 0
@@ -46,6 +48,7 @@ class Building:
         return True
 
     def print_building(self):
+        """ Print the building """
         print(f"The test Contains {self.length} characters:")
         print(f"Upercase letters: {self.upercase_letters}")
         print(f"Lowercase letters: {self.lowercase_letters}")
